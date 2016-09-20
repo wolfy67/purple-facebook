@@ -5,8 +5,8 @@
 
 Name:           purple-facebook
 Version:        0
-Release:        1.%{date}git%{gittag0}.wolfy%{?dist}
-Summary:        A replacement Yahoo prpl (protocol plugin) for Pidgin/libpurple
+Release:        2.%{date}git%{gittag0}%{?dist}.wolfy
+Summary:        A replacement for the builtin Facebook XMPP plugin
 
 Group:          Applications/Internet
 License:        GPLv2+
@@ -47,5 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/purple-2/libfacebook.so
 
 %changelog
-* Mon Sep 12 2016 Manuel "lonely wolf" Wolfshant <wolfy@fedoraproject.org> - 0-20160409git66ee77378d82.wolfy.el6
+* Tue Sep 20 2016 Manuel "lonely wolf" Wolfshant <wolfy@fedoraproject.org> - 0-2.20160409git66ee77378d82.el6.wolfy
+Fix summary. Thanks jgeboski for notification.
+
+* Mon Sep 12 2016 Manuel "lonely wolf" Wolfshant <wolfy@fedoraproject.org> - 0-1.20160409git66ee77378d82.el6.wolfy
 Initial package
